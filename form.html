@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+    <h1>Formulaire</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non urna urna. Integer tempor urna a metus posuere</p>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="form.html">Formulaire de contact</a>
+            </li>
+            <li>
+                <a href="calculatrice.html">Calculatrice</a>
+            </li>
+            <li>
+                <a href="blog.html">Blog</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <form action="form-traitement.php" method="post">
+            <fieldset>
+                <legend>Vos coordonnées</legend>
+            <div class="form">
+                <label for="name">Votre Nom :</label>
+                <input type="text" id="name" name="user-name" required>
+            </div>
+            <div class="form">
+                <label for="email">Votre E-mail :</label>
+                <input type="text" id="email" name="user-mail" required>
+            </div>
+            </fieldset>
+            <div class="form">
+                <label for="message">Votre Message :</label>
+                <br>
+                <textarea id="message" name="user-msg" placeholder="Ecrivez ici votre message" required></textarea>
+            </div>
+            <div class="form">
+                <label for="pays"></label>
+                <select id="pays" name="user-pays" required>
+                <option>Choisissez votre pays de résidence</option>
+                <option value="France">France</option>
+                <option value="Australie">Australie</option>
+                <option value="Allemagne">Allemagne</option>
+                </select>
+            </div>
+            <div class="form">
+                <label for="valider-choix">
+                    <abbr title="Requis" style="color: red">* </abbr>
+                    Valider les
+                    <a href="#">CGU</a>
+                </label>
+                <input type="radio" id="validation" name="validation" required>
+            </div>
+            <div class="button">
+                <button type="submit" class="btn"> Envoyer</button>
+            </div>
+        </form>
+    </section>
+    <footer style="margin-top: 2em;">
+        <a href="index.html">Retour au menu</a>
+    </footer>
+</body>
